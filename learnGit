@@ -27,3 +27,10 @@ hello world
    如果本地有个文件已经提交到版本库（commit），但是本地不小心将它删除了，这时使用git status可以看到这个文件确实在本地删除了，但是版本库中还有这个文件。这时就有两种选择
    (1)，确实想删除这个文件，所以现在就是要将版本库里的这个文件也删除，那么使用命令git rm file
    (2). 误删了该文件，现在想恢复该文件，使用git checkout -- file
+
+8.创建及合并分支
+   (1). 创建dev分支，并切换到dev:
+   	git checkout -b dev:创建并切换，等价于git branch dev, git checkout dev两条命令
+   (2). 查看分支：git branch
+   (3). 合并某分支到当前分支：git merge <name>
+   (4). 删除分支：git branch -d <name>
