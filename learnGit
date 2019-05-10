@@ -34,3 +34,9 @@ hello world
    (2). 查看分支：git branch
    (3). 合并某分支到当前分支：git merge <name>
    (4). 删除分支：git branch -d <name>
+
+9. 解决冲突
+   当各个分支都修改了某个文件，这样就会产生冲突，合并的时候也就不能直接用git merge <name>了，需要手动合并
+   i. 查看文件都有哪些地方产生冲突：cat file, 或者直接打开文件看有哪些地方冲突，修改完成之后，重修嘎提交就可以了
+   ii. 用到的命令:修改完后要执行add,和commit，这样分支就合并了。
+   iii. 合并之后，可以用命令git log --graph --pretty=oneline --abbrev-commit查看分支的结果
