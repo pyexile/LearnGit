@@ -40,3 +40,7 @@ hello world
    i. 查看文件都有哪些地方产生冲突：cat file, 或者直接打开文件看有哪些地方冲突，修改完成之后，重修嘎提交就可以了
    ii. 用到的命令:修改完后要执行add,和commit，这样分支就合并了。
    iii. 合并之后，可以用命令git log --graph --pretty=oneline --abbrev-commit查看分支的结果
+
+10. 分支管理策略
+   通常合并分支时，Git会用Fast forward模式，但是这种模式在删除分支之后，就会丢失分支的信息，也就从主线上看不出这个地方别合并过。所以建议合并时使用--no-ffde方式的git merge
+   即：git merge --no-ff -m '合并分支' dev
