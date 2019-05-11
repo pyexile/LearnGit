@@ -53,3 +53,8 @@ hello world
 
 12. Feature分支
    要删除某个未合并的分支（可能取消了该分支的功能），所以不能用git branch -d dev,而要用git branch -D dev 
+
+13. 创建标签
+   1. git tag <tagname>：创建新的标签，默认为HEAD， 也可以指定一个commit id;
+   2. git tag -a <tagname> -m "tag info" commit id:指定标签信息；也就是一个对该标签的一个说明
+   3. git tag:可以查看所有的标签
