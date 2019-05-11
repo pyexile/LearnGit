@@ -50,3 +50,6 @@ hello world
    ii. 所以要先保护现场，使用git stash
    ii. 创建新的分支修改，合并到master分支，删除新建的分支，切回之前工作的分支
    iii. 恢复现场：用git stash list查看有哪些现场被保护了。恢复现场有两种方法:一是使用git stash apply恢复，但是恢复后，stash内容并未删除，需要用git stash drop来删除。第二种方法是使用git stash pop,恢复的同事吧stash内容也删了。
+
+12. Feature分支
+   要删除某个未合并的分支（可能取消了该分支的功能），所以不能用git branch -d dev,而要用git branch -D dev 
