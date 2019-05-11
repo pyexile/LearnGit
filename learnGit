@@ -53,3 +53,6 @@ hello world
 
 12. Feature分支
    要删除某个未合并的分支（可能取消了该分支的功能），所以不能用git branch -d dev,而要用git branch -D dev 
+
+13. 多人协作
+   这部分不是很清楚，先放一个链接吧：https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320
