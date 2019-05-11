@@ -17,3 +17,5 @@ hello world
 5. 工作区和暂存区
    .git是Git的版本库，Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。
    工作区就是我们的工作目录，当执行git add file之后，其实就是将文件file传到暂存区，然后使用git commit 时，就是将暂存区的内容全部提交到当前分支
+
+测试Bug分支。。。
