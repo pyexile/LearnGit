@@ -1,4 +1,3 @@
-hello world
 2. 测试：直接在远程库修改，看本地使用pull之后的结果，是本地能直接被修改，还是要手动修改
    结果：（若只是远程库修改，本地为修改该文件，那么pull之后，本地的文件里会自动修改）
 3. 
@@ -25,15 +24,15 @@ hello world
  
 7. 删除
    如果本地有个文件已经提交到版本库（commit），但是本地不小心将它删除了，这时使用git status可以看到这个文件确实在本地删除了，但是版本库中还有这个文件。这时就有两种选择
-   (1)，确实想删除这个文件，所以现在就是要将版本库里的这个文件也删除，那么使用命令git rm file
-   (2). 误删了该文件，现在想恢复该文件，使用git checkout -- file
+   i，确实想删除这个文件，所以现在就是要将版本库里的这个文件也删除，那么使用命令git rm file
+   ii. 误删了该文件，现在想恢复该文件，使用git checkout -- file
 
 8.创建及合并分支
-   (1). 创建dev分支，并切换到dev:
+   i. 创建dev分支，并切换到dev:
    	git checkout -b dev:创建并切换，等价于git branch dev, git checkout dev两条命令
-   (2). 查看分支：git branch
-   (3). 合并某分支到当前分支：git merge <name>
-   (4). 删除分支：git branch -d <name>
+   ii. 查看分支：git branch
+   iii. 合并某分支到当前分支：git merge <name>
+   iv. 删除分支：git branch -d <name>
 
 9. 解决冲突
    当各个分支都修改了某个文件，这样就会产生冲突，合并的时候也就不能直接用git merge <name>了，需要手动合并
@@ -55,21 +54,21 @@ hello world
    要删除某个未合并的分支（可能取消了该分支的功能），所以不能用git branch -d dev,而要用git branch -D dev 
 
 13. 创建标签
-   1. git tag <tagname>：创建新的标签，默认为HEAD， 也可以指定一个commit id;
-   2. git tag -a <tagname> -m "tag info" commit id:指定标签信息；也就是一个对该标签的一个说明
-   3. git tag:可以查看所有的标签
+   i. git tag <tagname>：创建新的标签，默认为HEAD， 也可以指定一个commit id;
+   ii. git tag -a <tagname> -m "tag info" commit id:指定标签信息；也就是一个对该标签的一个说明
+   iii. git tag:可以查看所有的标签
 
 14. 操作标签
-   1. git push origin <tagname>: 推送一个本地标签
-   2. git push origin --tags: 推送全部未推送过的本地标签；
-   3. git tag -d <tagname>: 删除一个本地标签
-   4. git push origin :refs/tags/<tagname>: 删除一个远程标签
+   i. git push origin <tagname>: 推送一个本地标签
+   ii. git push origin --tags: 推送全部未推送过的本地标签；
+   iii. git tag -d <tagname>: 删除一个本地标签
+   iv. git push origin :refs/tags/<tagname>: 删除一个远程标签
 
 15. 多人协作
    这部分不是很清楚，先放一个链接吧：https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320
 
 16. 使用github
    如何为感兴趣的项目贡献自己的力量
-   1. fork别人的项目到自己的GitHub的仓库下
-   2. 从自己的仓库里clone一份到本地，注意，是要从自己的仓库里clone，因为别人那么你即便克隆下来，也不能推送
-   3. 然后就可以在GitHub上发起一个pull request，等待对方的回应。
+   i. fork别人的项目到自己的GitHub的仓库下
+   ii. 从自己的仓库里clone一份到本地，注意，是要从自己的仓库里clone，因为别人那么你即便克隆下来，也不能推送
+   iii. 然后就可以在GitHub上发起一个pull request，等待对方的回应。
