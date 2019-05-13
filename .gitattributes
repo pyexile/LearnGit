@@ -1,0 +1,3 @@
+*.js linguist-language=Git 
+*.css linguist-language=Git
+*.html linguist-language=Git 
